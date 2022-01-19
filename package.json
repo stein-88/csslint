@@ -6,10 +6,12 @@
     "author": "WandersonSantos",
     "license": "MIT",
     "scripts": {
-        "vercss": "gulp verCss"
+        "checkcss": "gulp checkcss",
+        "default": "gulp"
     },
     "dependencies": {
         "gulp": "^4.0.2",
-        "gulp-csscomb": "^3.1.0"
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1"
     }
 }

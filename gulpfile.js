@@ -1,8 +1,13 @@
-const gulp = require('gulp');
-const csscomb = require('gulp-csscomb');
+const gulp = require('gulp')
+const cleanCSS = require('gulp-clean-css')
+const concat = require('gulp-concat')
 
-const verCss = () => {
-    return gulp.src('src/styles/*.css').pipe(csscomb())
+const checkcss = () => {
+    return gulp.src('src/styles/*.css')
+        .pipe(cleanCSS())
+        .pipe(concat('main.min.css'))
+        .pipe(gulp.dest('assets/styles'))
 }
 
-exports.verCss = verCss
+exports.checkcss = checkcss
+exports.default = checkcss
