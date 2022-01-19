@@ -18,7 +18,7 @@ assets/style/ ----> .css
 Comandos:
 
 - `yarn checkcss` para verificar arquivos CSS.
-  - Procura os arquivos CSS na pasta `filestocheck/styles`.
+  - Procura os arquivos CSS na pasta `src/styles`.
   - Verifica erros no CSS.
   - Minimifica o CSS.
   - Exporta para a pasta `assets/style`
